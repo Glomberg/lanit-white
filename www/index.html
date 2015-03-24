@@ -7,8 +7,60 @@
 	<link rel="stylesheet" type="text/css" href="css/styles.css" />
 	<script src="js/jquery-1.11.2.min.js"></script>
 	<script src="js/script.js"></script>
+	<!--[if lt IE 9]>
+	   <script>
+		  document.createElement('header');
+		  document.createElement('nav');
+		  document.createElement('section');
+		  document.createElement('article');
+		  document.createElement('aside');
+		  document.createElement('footer');
+	   </script>
+	<![endif]-->
 </head>
 <body>
-
+<header>
+	<div class="top">
+		<div class="inner">
+			<h1>Lanit Partner</h1>
+			<ul>
+				<li><a href="#">Решения</a></li>
+				<li><a href="#">О компании</a></li>
+				<li><a href="#">Поддержка</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="inner">
+		<div class="invert-color">Information Technology</div>
+		<nav>
+			<ul>
+				<li><div class="active"></div><a href="#">Собственник<div class="smaller">компании</div></a></li>
+				<li><div class="active"></div><a href="#">Руководитель<div class="smaller">компании</div></a></li>
+				<li><div class="active"></div><a href="#">Внутренний<div class="smaller">пользователь</div></a></li>
+				<li><div class="active"></div><a href="#">Внешний<div class="smaller">пользователь</div></a></li>
+			</ul>
+			<div class="search">
+				<input type="text" id="search" />
+				<a href="#" class="serch-button"></a>
+			</div>
+		</nav>
+		<div class="callback">
+			<form method="" action="">
+				<input type="text" />
+				<input type="text" />
+				<!--<input type="submit" />
+				не люблю использовать сабмиты и баттоны
+				много нужно допилить ради кроссбраузерности
+				да и в <FORM> оборачивать уже перестаю
+				все равно при помощи AJAX данные отправлять-->
+				<a href="#">Заказать Звонок</a>
+			</form>
+		</div>
+	</div>
+</header>
+<div class="slider"></div>
+<div class="content"></div>
+<footer></footer>
+</div>
 </body>
 </html>
