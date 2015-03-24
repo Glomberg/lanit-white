@@ -6,6 +6,7 @@
 	<link rel="stylesheet" type="text/css" href="css/css-reset.css" />
 	<link rel="stylesheet" type="text/css" href="css/styles.css" />
 	<script src="js/jquery-1.11.2.min.js"></script>
+	<script src="js/jquery.jscrollpane.min.js"></script>
 	<script src="js/script.js"></script>
 	<!--[if lt IE 9]>
 	   <script>
@@ -46,8 +47,8 @@
 		</nav>
 		<div class="callback">
 			<form method="" action="">
-				<input type="text" />
-				<input type="text" />
+				<input type="text" value="Ваше Имя" />
+				<input type="text" value="Телефон" />
 				<!--<input type="submit" />
 				не люблю использовать сабмиты и баттоны
 				много нужно допилить ради кроссбраузерности
@@ -58,9 +59,80 @@
 		</div>
 	</div>
 </header>
-<div class="slider"></div>
-<div class="content"></div>
-<footer></footer>
+<div class="slider">
+<style>
+	/**scrollPane**/
+	@import "jscrollpane.css";
+</style>
+	<div class="about">Мы предоставляем полный спектр услуг в области проектирования и внедрения
+	инженерных и программных решений, необходимых для качественного построения
+	ИТ-среды, обеспечивающей нашим клиентам эффективное развитие и рост.</div>
+	<div class="headline">Новости дня <span class="blue-text">/ News of the day</span></div>
+	<div class="slider-inner">
+		<div class="sliders">
+			<div class="slide">
+				<div class="slider-element little">
+					<img src="images/slider-element-1.jpg" alt="" />
+					<div class="anounce"><p>Завершение монтажа комплексных инженерных систем.</p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					</div>
+				</div>
+				<div class="slider-element little">
+					<img src="images/slider-element-2.jpg" alt="" />
+					<div class="anounce"><p>Высший партнерский статус<br>HP Partner One 2014</p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</div>
+				</div>
+				<div class="slider-element big">
+					<img src="images/slider-element-3.jpg" alt="" />
+					<div class="anounce"><p>Участие во второй технической партнерской конференции "Барс-Груп"</p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</div>
+				</div>
+			</div>
+			<div class="slide">
+				<div class="slider-element big">
+					<img src="images/slider-element-4.jpg" alt="" />
+					<div class="anounce"><p>Участие во второй технической партнерской конференции "Барс-Груп"</p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</div>
+				</div>
+				<div class="slider-element little">
+					<img src="images/slider-element-5.jpg" alt="" />
+					<div class="anounce"><p>Завершение монтажа комплексных инженерных систем.</p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					</div>
+				</div>
+				<div class="slider-element little">
+					<img src="images/slider-element-6.jpg" alt="" />
+					<div class="anounce"><p>Высший партнерский статус<br>HP Partner One 2014</p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</div>
+				</div>
+			</div>
+			<div class="slide">
+				<div class="slider-element little">
+					<img src="images/slider-element-7.jpg" alt="" />
+					<div class="anounce"><p>Завершение монтажа комплексных инженерных систем.</p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					</div>
+				</div>
+				<div class="slider-element little">
+					<img src="images/slider-element-8.jpg" alt="" />
+					<div class="anounce"><p>Высший партнерский статус<br>HP Partner One 2014</p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</div>
+				</div>
+				<div class="slider-element big">
+					<img src="images/slider-element-9.jpg" alt="" />
+					<div class="anounce"><p>Участие во второй технической партнерской конференции "Барс-Груп"</p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</div>
+				</div>
+			</div>
+		</div>
+		
+	</div>
 </div>
+<div class="content">
+	<div class="inner">
+		<div class="headline">Все новости <span class="blue-text">/ All News</span></div>
+	</div>
+</div>
+<footer></footer>
 </body>
 </html>

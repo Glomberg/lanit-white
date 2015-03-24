@@ -25,7 +25,6 @@ a:hover {
 }
 /************************
 structure:
-	-.TOP
 	- HEADER
 	- .SLIDER
 	- .CONTENT
@@ -35,6 +34,7 @@ structure:
 header {
 	height: 450px;
 	background: url('../images/header-bg.jpg') no-repeat center bottom;
+	margin-bottom: 10px;
 }
 .top {
 	background-color: #FFFFFF;
@@ -115,6 +115,7 @@ nav #search {
 	height: 28px;
 	width: 200px;
 	font-size: 18px;
+	font-weight: lighter;
 }
 nav .serch-button {
 	position: absolute;
@@ -130,10 +131,114 @@ nav .serch-button {
 	margin: 0 auto;
 	background: rgba(255, 255, 255, 0.75);
 	font-weight: lighter;
+	padding-left: 25px;
+	position: relative;
 }
 .callback input {
-
+	height: 50px;
+	width: 250px;
+	margin-right: 8px;
+	padding-left: 13px;
+	color: #313131;
+	margin-top: 25px;
 }
 .callback a {
-	
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	display: inline-block;
+	color: #FFFFFF;
+	padding: 20px 45px;
+	font-size: 22px;
+	background-color: #0099FF;
+	transition: opacity 0.3s;
 }
+.callback a:hover {
+	opacity: 0.75;
+}
+/**FOR SLIDER**/
+.slider {
+	background-color: #F1F1F1;
+	padding-top: 70px;
+	margin-bottom: 110px;
+}
+.about {
+	width: 840px;
+	margin: 0 auto;
+	font-size: 22px;
+	text-align: center;
+	font-weight: lighter;
+	margin-bottom: 60px;
+}
+.headline {
+	font-size: 42px;
+	text-align: center;
+	font-weight: lighter;
+	color: #222222;
+	margin-bottom: 50px;
+}
+.blue-text {
+	color: #3AB7FD;
+}
+.slider-inner {
+	max-width: 1900px;
+	min-width: 960px;
+	height: 580px;
+	margin: 0 auto;
+	position: relative;
+	overflow: auto;
+}
+	.sliders {
+		width: 2106px;
+		height: 500px;
+		position: absolute;
+		overflow: hidden;
+	}
+	.sliders .slide {
+		width: 700px;
+		height: 500px;
+		float: left;
+		margin-right: 2px;
+	}
+	.slider-element {
+		display: inline-block;
+		margin-bottom: 2px;
+		height: 248px;
+		overflow: hidden;
+		position: relative;
+	}
+	.slider-element img {
+		width: 100%;
+	}
+		.big {
+			width: 698px;
+		}
+		.little {
+			width: 347px;
+		}
+	.anounce {
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+		position: absolute;
+		top: 173px;
+		left: 0;
+		height: 248px;
+		/*height: 75px;*/
+		width: 100%;
+		background: url('../images/anounce-pic.png') no-repeat 15px 25px;
+		background-color: rgba(51, 153, 255, 0.75);
+		padding: 20px 25px 0 50px;
+		color: #FFFFFF;
+		font-size: 16px;
+		transition: top 0.2s, background-color 0.2s;
+	}
+	.anounce p {
+		margin-bottom: 40px;
+		
+	}
+	.slider-element:hover .anounce {
+		top: 0;
+		background-color: rgba(34, 34, 34, 0.75);
+	}
+/**FOR CONTENT**/
