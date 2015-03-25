@@ -1,4 +1,4 @@
-﻿body {
+body {
 	font-family: 'Segoe UI', sans-serif;
 	min-width: 960px;
 }
@@ -8,7 +8,10 @@
 }
 .content {
 	max-width: 1290px;
+	min-width: 960px;
 	margin: 0 auto;
+	text-align: center;
+	font-size: 0;
 }
 .clear {
 	width: 100%;
@@ -28,6 +31,7 @@ structure:
 	- HEADER
 	- .SLIDER
 	- .CONTENT
+	- .INFORMATION
 	- FOOTER
 *************************/
 /**FOR HEADER**/
@@ -112,13 +116,14 @@ nav #search {
 	position: absolute;
 	right: 50px;
 	top: 35px;
-	height: 28px;
+	height: 30px;
 	width: 200px;
 	font-size: 18px;
 	font-weight: lighter;
 }
 nav .serch-button {
 	position: absolute;
+	display: inline-block;
 	right: 20px;
 	top: 35px;
 	height: 30px;
@@ -144,21 +149,28 @@ nav .serch-button {
 }
 .callback a {
 	position: absolute;
+	display: inline-block;
 	right: 20px;
 	top: 20px;
+	width: 248px;
+	height: 62px;
 	display: inline-block;
 	color: #FFFFFF;
-	padding: 20px 45px;
+	/*padding: 20px 45px;*/
+	line-height: 62px;
+	text-align: center;
+	vertical-align: middle;
 	font-size: 22px;
 	background-color: #0099FF;
 	transition: opacity 0.3s;
+	-webkit-appearance: none;
 }
 .callback a:hover {
 	opacity: 0.75;
 }
 /**FOR SLIDER**/
 .slider {
-	background-color: #F1F1F1;
+	background: linear-gradient(to bottom, #F1F1F1, #FFFFFF);
 	padding-top: 70px;
 	margin-bottom: 110px;
 }
@@ -183,6 +195,7 @@ nav .serch-button {
 .slider-inner {
 	max-width: 1900px;
 	min-width: 960px;
+	/*width: 960px;*/
 	height: 580px;
 	margin: 0 auto;
 	position: relative;
@@ -242,3 +255,156 @@ nav .serch-button {
 		background-color: rgba(34, 34, 34, 0.75);
 	}
 /**FOR CONTENT**/
+.socials {
+	display: inline-block;
+	width: 400px;
+	height: 40px;
+	padding-left: 110px;
+}
+.content .inner::after {
+	margin-bottom: 55px;
+}
+.articles-column {
+	display: inline-block;
+	vertical-align: top;
+	width: 300px;
+	margin-right: 30px;
+}
+.articles-column.fourth {
+	margin-right: 0;
+}
+/*Красивость - убираем 4 колонку на планшетах*/
+@media screen and (max-width: 1290px){
+	.articles-column.fourth {
+		display: none;
+	}
+	.articles-column.third {
+		margin-right: 0;
+	}
+}
+/*Красивость закончилась*/
+	.articles-column article {
+		margin-bottom: 80px;
+	}
+	.articles-column figure {
+		margin-bottom: 10px;
+		position: relative;
+	}
+	.articles-column figure img {
+		width: 100%;
+	}
+	.articles-column figure .figure-label {
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		font-size: 14px;
+		color: #FFFFFF;
+		padding: 10px 10px;
+		background-color: #FF654C;
+		transition: background-color 0.3s;
+	}
+	.articles-column figure:hover .figure-label {
+		background-color: #0099FF;
+	}
+	.articles-column p {
+		font-size: 18px;
+		color: #222222;
+		text-align: left;
+	}
+.archive {
+	width: 350px;
+	height: 90px;
+	display: block;
+	text-align: center;
+	line-height: 90px;
+	vertical-align: middle;
+	margin: 0 auto;
+	color: #FFFFFF;
+	font-size: 32px;
+	background-color: #FF654C;
+	transition: opacity 0.3s;
+	border-radius: 10px 10px 0 10px;
+	margin-bottom: 70px;
+}
+.archive:hover {
+	color: #FFFFFF;
+	opacity: 0.75;
+}
+/**FOR .INFORMATION **/
+.information {
+	height: 120px;
+	background-color: #F7F7F7;
+	font-size: 24px;
+	font-weight: lighter;
+}
+	.information  .inner {
+		position: relative;
+	}
+	.information span{
+		display: inline-block;
+		vertical-align: top;
+		padding-top: 35px;
+	}
+	.information span > strong {
+		font-size: 18px;
+	}
+	.information a {
+		display: block;
+		position: absolute;
+		right: 0;
+		top: 30px;
+		width: 250px;
+		height: 60px;
+		line-height: 60px;
+		text-align: center;
+		vertical-align: middle;
+		color: #FFFFFF;
+		background-color: #0099FF;
+		transition: opacity 0.3s;
+	}
+	.information a:hover {
+		color: #FFFFFF;
+		opacity: 0.75;
+	}
+/** FOR FOOTER **/
+.links {
+	height: 215px;
+	border-bottom: 1px solid #F0F0F0;
+	padding: 50px 0;
+	position: relative;
+}
+.links-column {
+	width: 300px;
+	display: inline-block;
+	vertical-align: top;
+}
+	.links-column  h2 {
+		margin-bottom: 10px;
+		font-size: 18px;
+	}
+	.links-column li {
+		line-height: 22px;
+		font-size: 14px;
+		font-weight: lighter;
+	}
+.bottom-socials {
+	position: absolute;
+	right: 50px;
+	bottom: 45px;
+}
+	.bottom-socials a {
+		display: inline-block;
+		height: 25px;
+		width: 25px;
+		border-radius: 100px;
+		transition: opacity 0.3s;
+	}
+	.bottom-socials a:hover {
+		opacity: 0.75;
+	}
+		.bottom-socials .bottom-fb {
+			background: url('../images/bottom-fb.png') no-repeat 0 0;
+		}
+		.bottom-socials .bottom-tw {
+			background: url('../images/bottom-tw.png') no-repeat 0 0;
+		}

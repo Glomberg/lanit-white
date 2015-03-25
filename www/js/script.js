@@ -1,3 +1,5 @@
 ﻿$(document).ready(function(){
-	//$(".slider-inner").jScrollPane();
+	$(".slider-inner").jScrollPane({
+		contentWidth: '2106'		
+	});
 });

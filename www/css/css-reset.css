@@ -1,4 +1,4 @@
-﻿html, body, div, span, object, iframe,
+html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 abbr, address, cite, code,
 del, dfn, em, img, ins, kbd, q, samp,
@@ -81,4 +81,7 @@ input, input:focus, textarea, textarea:focus, select {
 	box-shadow: none;
 	border: none;
 	outline: none;
+	-webkit-appearance: none;
+    border-radius: 0;
+	padding: 0;
 }
